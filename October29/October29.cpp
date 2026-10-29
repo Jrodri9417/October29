@@ -12,9 +12,9 @@ void printSalesData(std::vector<std::vector<int>>salesData)
     const int WIDEST_COLUMN = 10;
 
 
-    for (int row = 0; row < salesData[0].size(); ++row)
+    for (int row = 0; row < salesData.size(); ++row)
     {
-        for (int column = 0; column < salesData[0].size(); ++column) //Crazy
+        for (int column = 0; column < salesData[row].size(); ++column) //Crazy
         {
             std::cout << std::setw(WIDEST_COLUMN);
             std::cout << std::left;
